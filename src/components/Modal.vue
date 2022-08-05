@@ -1,7 +1,7 @@
 <template>
     <div class="modal">
         <div class="head">
-            <p>Nuevo movimiento</p>
+            <h2>Nuevo Movimiento</h2>
             <img @click="close" src="@/assets/close-icon.svg" alt="cerrar">
         </div>
         <div class="body">
@@ -26,7 +26,11 @@ const close = () => emit("close");
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: white;
+  background-color: #ffffff;
+}
+
+.body {
+  margin: 10px;
 }
 
 .head {

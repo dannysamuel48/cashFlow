@@ -5,7 +5,7 @@
     </template>
     <template #resume>
       <Resume
-        :total-label="date"
+        :total-label="'Movimiento'"
         :label="label"
         :amount="amount"
         :total-amount="totalAmount"
@@ -48,7 +48,6 @@ export default {
   },
   data() {
     return {
-      date: new Date().toLocaleDateString(),
       amount: null,
       label: null,
       movements: [],
@@ -102,8 +101,8 @@ export default {
       localStorage.setItem("movements", JSON.stringify(this.movements));
     },
     select(el) {
-      console.log(el);
       this.amount = el;
+      console.log(el);
     }
   },
 };

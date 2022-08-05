@@ -50,12 +50,13 @@ const remove = () => {
 </script>
 
 <style scoped>
+
 .movement {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 16px;
+  padding: 50px;
   background-color: #e6f9ff;
   border-radius: 8px;
   box-sizing: border-box;
@@ -79,6 +80,7 @@ h4 {
 }
 .movement .action img {
   margin-bottom: 16px;
+  margin-right: 16px;
 }
 .red {
   color: red;
